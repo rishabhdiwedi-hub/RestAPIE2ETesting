@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-11T01:05:01.629187" rpa="false" schemaversion="5">
+<suite id="s1" name="RestAPI001" source="C:\Users\lenovo\PycharmProjects\RestAPITesting\TestCases\RestAPI001.robot">
+<test id="s1-t1" name="TC_001_GET_Request" line="10">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-01-11T01:05:02.357672" level="INFO">Creating Session using : alias=Student_Details, url=https://thetestingworld.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>Student_Details</arg>
+<arg>${URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-01-11T01:05:02.357086" elapsed="0.001076"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-01-11T01:05:03.061777" level="INFO">GET Request : url=https://thetestingworld.com/api/studentDetails 
+ path_url=/api/studentDetails 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-01-11T01:05:03.062345" level="INFO">GET Response : url=https://thetestingworld.com/api/studentDetails 
+ status=200, reason=OK 
+ headers={'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'X-Powered-By': 'PHP/7.2.34', 'Content-Type': 'text/html; charset=UTF-8', 'Content-Length': '31', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Sun, 11 Jan 2026 00:05:03 GMT', 'Server': 'LiteSpeed', 'platform': 'hostinger', 'panel': 'hpanel', 'Content-Security-Policy': 'upgrade-insecure-requests', 'alt-svc': 'h3=":443"; ma=2592000, h3-29=":443"; ma=2592000, h3-Q050=":443"; ma=2592000, h3-Q046=":443"; ma=2592000, h3-Q043=":443"; ma=2592000, quic=":443"; ma=2592000; v="43,46"'} 
+ body=coming soon 
+ </msg>
+<msg time="2026-01-11T01:05:03.062693" level="INFO">C:\Users\lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'thetestingworld.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-01-11T01:05:03.063610" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>Student_Details</arg>
+<arg>api/studentDetails</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-01-11T01:05:02.358862" elapsed="0.705032"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-11T01:05:03.065203" elapsed="0.003529"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-11T01:05:03.069721" elapsed="0.002732"/>
+</kw>
+<status status="PASS" start="2026-01-11T01:05:02.347945" elapsed="0.726350"/>
+</test>
+<status status="PASS" start="2026-01-11T01:05:01.633217" elapsed="1.444906"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="RestAPI001" id="s1" pass="1" fail="0" skip="0">RestAPI001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
