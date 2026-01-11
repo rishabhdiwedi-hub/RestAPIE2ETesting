@@ -72,3 +72,11 @@ TC_002_E2E_Testing
     ${Name}=        get from list    ${First_Name}      0
     #Validate that the name was updated
     should be equal    ${Name}      ${New_Name}
+
+#Now using Delete request
+    #Send a Delete request to delete the data
+    ${Delete_Responce}=     DELETE On Session    E2E_API_Testing       ${URI}/${ids}
+    ${Delete_Json_Response}     set variable    ${Delete_Responce.json()}
+    ${Deleted_Message}=     get value from json    ${Delete_Json_Response}      $.message
+    ${Message}=     get from list    ${Deleted_Message}     0
+    should be equal    ${Message}       Object with id = ${ids} has been deleted.

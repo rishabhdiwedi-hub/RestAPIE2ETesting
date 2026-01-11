@@ -1,251 +1,298 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-11T19:35:09.339768" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-11T20:48:26.272358" rpa="false" schemaversion="5">
 <suite id="s1" name="RestAPI001" source="C:\Users\lenovo\PycharmProjects\RestAPITesting\TestCases\RestAPI001.robot">
 <test id="s1-t1" name="RestAPI Get Request Testing" line="13">
 <kw name="TC_001_GET_Request" owner="Resource">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-01-11T19:35:10.300601" level="INFO">Creating Session using : alias=Student_Details, url=https://api.restful-api.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-01-11T20:48:27.208865" level="INFO">Creating Session using : alias=Student_Details, url=https://api.restful-api.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>Student_Details</arg>
 <arg>${URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-01-11T19:35:10.300232" elapsed="0.001313"/>
+<status status="PASS" start="2026-01-11T20:48:27.208213" elapsed="0.001251"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-01-11T19:35:10.988410" level="INFO">GET Request : url=https://api.restful-api.dev/objects 
+<msg time="2026-01-11T20:48:27.593394" level="INFO">GET Request : url=https://api.restful-api.dev/objects 
  path_url=/objects 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-01-11T19:35:10.989003" level="INFO">GET Response : url=https://api.restful-api.dev/objects 
+<msg time="2026-01-11T20:48:27.595084" level="INFO">GET Response : url=https://api.restful-api.dev/objects 
  status=200, reason=OK 
- headers={'Date': 'Sun, 11 Jan 2026 18:35:09 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EAS%2BsfchUJsPVmGCyTtEez3Aqv8vJRXRh6T6ciUoQI3UNaO8TiEAmJ6w%2FWFp7P6%2B6TUSSoU2Ed9jaAe71GeqmHaooIlqARC9t24ikdrYkn5axtc%3D"}]}', 'Content-Encoding': 'zstd', 'CF-RAY': '9bc683266e3797af-ARN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Sun, 11 Jan 2026 19:48:26 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=trP9x%2BgzntJHUiguOKDsW7WNDIMdzpT1I4FHxC1dbMfeBoDIpMBLh%2Fa2tSLKlOPS72ZXtdAlIZheGy6n3wfNZBC0UoGz3%2F6wQrTTu0Gm4wZaanU%3D"}]}', 'Content-Encoding': 'zstd', 'CF-RAY': '9bc6ee7f6e66902d-ARN', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[{"id":"1","name":"Google Pixel 6 Pro","data":{"color":"Cloudy White","capacity":"128 GB"}},{"id":"2","name":"Apple iPhone 12 Mini, 256GB, Blue","data":null},{"id":"3","name":"Apple iPhone 12 Pro Max","data":{"color":"Cloudy White","capacity GB":512}},{"id":"4","name":"Apple iPhone 11, 64GB","data":{"price":389.99,"color":"Purple"}},{"id":"5","name":"Samsung Galaxy Z Fold2","data":{"price":689.99,"color":"Brown"}},{"id":"6","name":"Apple AirPods","data":{"generation":"3rd","price":120}},{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}},{"id":"8","name":"Apple Watch Series 8","data":{"Strap Colour":"Elderberry","Case Size":"41mm"}},{"id":"9","name":"Beats Studio3 Wireless","data":{"Color":"Red","Description":"High-performance wireless noise cancelling headphones"}},{"id":"10","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"64 GB","Screen size":7.9}},{"id":"11","name":"Apple iPad Mini 5th Gen","data":{"Capacity":"254 GB","Screen size":7.9}},{"id":"12","name":"Apple iPad Air","data":{"Generation":"4th","Price":"419.99","Capacity":"64 GB"}},{"id":"13","name":"Apple iPad Air","data":{"Generation":"4th","Price":"519.99","Capacity":"256 GB"}}] 
  </msg>
-<msg time="2026-01-11T19:35:10.989399" level="INFO">C:\Users\lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'api.restful-api.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-01-11T20:48:27.595514" level="INFO">C:\Users\lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'api.restful-api.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-01-11T19:35:10.990324" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-01-11T20:48:27.596465" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>Student_Details</arg>
 <arg>${URI}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-01-11T19:35:10.302107" elapsed="0.688422"/>
+<status status="PASS" start="2026-01-11T20:48:27.209870" elapsed="0.386800"/>
 </kw>
 <kw name="Convert To String" owner="BuiltIn">
-<msg time="2026-01-11T19:35:10.994585" level="INFO">${status_code} = 200</msg>
+<msg time="2026-01-11T20:48:27.600375" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2026-01-11T19:35:10.991275" elapsed="0.003487"/>
+<status status="PASS" start="2026-01-11T20:48:27.597376" elapsed="0.003153"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-01-11T19:35:10.995378" elapsed="0.001537"/>
+<status status="PASS" start="2026-01-11T20:48:27.601073" elapsed="0.002136"/>
 </kw>
-<status status="PASS" start="2026-01-11T19:35:10.298610" elapsed="0.698743"/>
+<status status="PASS" start="2026-01-11T20:48:27.205425" elapsed="0.398285"/>
 </kw>
 <kw name="TC_002_E2E_Testing" owner="Resource">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-01-11T19:35:11.000975" level="INFO">Creating Session using : alias=E2E_API_Testing, url=https://api.restful-api.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg time="2026-01-11T20:48:27.608204" level="INFO">Creating Session using : alias=E2E_API_Testing, url=https://api.restful-api.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
 <arg>E2E_API_Testing</arg>
 <arg>${URL}</arg>
 <arg>verify=True</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-01-11T19:35:11.000148" elapsed="0.002729"/>
+<status status="PASS" start="2026-01-11T20:48:27.607245" elapsed="0.001725"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-01-11T19:35:11.007073" level="INFO">${headers} = {'Content-Type': 'application/json'}</msg>
+<msg time="2026-01-11T20:48:27.612050" level="INFO">${headers} = {'Content-Type': 'application/json'}</msg>
 <var>${headers}</var>
 <arg>Content-Type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-01-11T19:35:11.004064" elapsed="0.003297"/>
+<status status="PASS" start="2026-01-11T20:48:27.609914" elapsed="0.002319"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-01-11T19:35:11.012016" level="INFO">${Data} = {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB'}</msg>
+<msg time="2026-01-11T20:48:27.615360" level="INFO">${Data} = {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB'}</msg>
 <var>${Data}</var>
 <arg>year=2025</arg>
 <arg>price=${price}</arg>
 <arg>CPU model=${CPU model}</arg>
 <arg>Hard disk size=${Hard disk size}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-01-11T19:35:11.008430" elapsed="0.003872"/>
+<status status="PASS" start="2026-01-11T20:48:27.612935" elapsed="0.002604"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-01-11T19:35:11.015905" level="INFO">${POST_Body} = {'name': 'HP Compq Pluse', 'data': {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB'}}</msg>
+<msg time="2026-01-11T20:48:27.620874" level="INFO">${POST_Body} = {'name': 'HP Compq Pluse', 'data': {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB'}}</msg>
 <var>${POST_Body}</var>
 <arg>name=${old_name}</arg>
 <arg>data=${Data}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-01-11T19:35:11.013355" elapsed="0.002751"/>
+<status status="PASS" start="2026-01-11T20:48:27.616277" elapsed="0.004901"/>
 </kw>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2026-01-11T19:35:12.055304" level="INFO">POST Request : url=https://api.restful-api.dev/objects 
+<msg time="2026-01-11T20:48:28.622523" level="INFO">POST Request : url=https://api.restful-api.dev/objects 
  path_url=/objects 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '115'} 
  body=b'{"name": "HP Compq Pluse", "data": {"year": "2025", "price": "18500", "CPU model": "A7", "Hard disk size": "2 TB"}}' 
  </msg>
-<msg time="2026-01-11T19:35:12.055904" level="INFO">POST Response : url=https://api.restful-api.dev/objects 
+<msg time="2026-01-11T20:48:28.622902" level="INFO">POST Response : url=https://api.restful-api.dev/objects 
  status=200, reason=OK 
- headers={'Date': 'Sun, 11 Jan 2026 18:35:10 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rqqXOqVEvD03rnq93MjEWqjDlnPbfzS7Q7Vezt4%2FaPP1Mb8E1nkOHXyMCLxXVCdVG4azHUVQQnyyq%2BPm0IfFI70d7XUfQ19%2B5o%2BBkxf%2Bq5w1f%2Bo%3D"}]}', 'Content-Encoding': 'zstd', 'CF-RAY': '9bc6832f2bf5902d-ARN', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"id":"ff8081819782e69e019bae5739e91417","name":"HP Compq Pluse","createdAt":"2026-01-11T18:35:10.697+00:00","data":{"year":"2025","price":"18500","CPU model":"A7","Hard disk size":"2 TB"}} 
+ headers={'Date': 'Sun, 11 Jan 2026 19:48:27 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=yPHh4vm62t5knHczGv8XThlUzieeY2IxQmxFjClOkwB%2F%2Fv6gzCxhQDIpHGkzTbLx19PkbzgAcOIr1HC7gOzRBaWkItjTW%2FrA%2FAD3mxBZ%2FGUkJqc%3D"}]}', 'Content-Encoding': 'zstd', 'CF-RAY': '9bc6ee85fe64ad45-ARN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"id":"ff8081819782e69e019bae9a501f149b","name":"HP Compq Pluse","createdAt":"2026-01-11T19:48:27.295+00:00","data":{"year":"2025","price":"18500","CPU model":"A7","Hard disk size":"2 TB"}} 
  </msg>
-<msg time="2026-01-11T19:35:12.056560" level="INFO">${post_response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-01-11T20:48:28.623511" level="INFO">${post_response} = &lt;Response [200]&gt;</msg>
 <var>${post_response}</var>
 <arg>E2E_API_Testing</arg>
 <arg>${URI}</arg>
 <arg>headers=${headers}</arg>
 <arg>json=${POST_Body}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-01-11T19:35:11.016736" elapsed="1.039975"/>
+<status status="PASS" start="2026-01-11T20:48:27.622145" elapsed="1.001518"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${post_response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.057408" elapsed="0.003083"/>
+<status status="PASS" start="2026-01-11T20:48:28.624305" elapsed="0.003001"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${post_response.json()}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.061443" elapsed="0.005491"/>
+<status status="PASS" start="2026-01-11T20:48:28.627949" elapsed="0.006060"/>
 </kw>
 <kw name="Convert To String" owner="BuiltIn">
-<msg time="2026-01-11T19:35:12.073808" level="INFO">${status_code} = 200</msg>
+<msg time="2026-01-11T20:48:28.639590" level="INFO">${status_code} = 200</msg>
 <var>${status_code}</var>
 <arg>${post_response.status_code}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.068139" elapsed="0.005882"/>
+<status status="PASS" start="2026-01-11T20:48:28.634998" elapsed="0.004861"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${status_code}</arg>
 <arg>200</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.074936" elapsed="0.002204"/>
+<status status="PASS" start="2026-01-11T20:48:28.640735" elapsed="0.001721"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-01-11T19:35:12.082495" level="INFO">${Json_Response} = {'id': 'ff8081819782e69e019bae5739e91417', 'name': 'HP Compq Pluse', 'createdAt': '2026-01-11T18:35:10.697+00:00', 'data': {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB...</msg>
+<msg time="2026-01-11T20:48:28.647568" level="INFO">${Json_Response} = {'id': 'ff8081819782e69e019bae9a501f149b', 'name': 'HP Compq Pluse', 'createdAt': '2026-01-11T19:48:27.295+00:00', 'data': {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB...</msg>
 <var>${Json_Response}</var>
 <arg>${post_response.json()}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.078066" elapsed="0.004709"/>
+<status status="PASS" start="2026-01-11T20:48:28.643131" elapsed="0.004701"/>
 </kw>
 <kw name="Get Value From Json" owner="JSONLibrary">
-<msg time="2026-01-11T19:35:12.144844" level="INFO">${id_list} = ['ff8081819782e69e019bae5739e91417']</msg>
+<msg time="2026-01-11T20:48:28.716782" level="INFO">${id_list} = ['ff8081819782e69e019bae9a501f149b']</msg>
 <var>${id_list}</var>
 <arg>${Json_Response}</arg>
 <arg>id</arg>
 <doc>Get Value From JSON using JSONPath</doc>
-<status status="PASS" start="2026-01-11T19:35:12.083688" elapsed="0.061255"/>
+<status status="PASS" start="2026-01-11T20:48:28.648633" elapsed="0.068241"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${id_list}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.145264" elapsed="0.001288"/>
+<status status="PASS" start="2026-01-11T20:48:28.717181" elapsed="0.000805"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2026-01-11T19:35:12.147487" level="INFO">${ids} = ff8081819782e69e019bae5739e91417</msg>
+<msg time="2026-01-11T20:48:28.718713" level="INFO">${ids} = ff8081819782e69e019bae9a501f149b</msg>
 <var>${ids}</var>
 <arg>${id_list}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.146950" elapsed="0.000619"/>
+<status status="PASS" start="2026-01-11T20:48:28.718293" elapsed="0.000482"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${ids}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.147880" elapsed="0.000742"/>
+<status status="PASS" start="2026-01-11T20:48:28.718993" elapsed="0.000652"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-01-11T19:35:12.149914" level="INFO">${Put_Body} = {'id': 'ff8081819782e69e019bae5739e91417', 'name': 'Accer Pro', 'data': {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB'}}</msg>
+<msg time="2026-01-11T20:48:28.720850" level="INFO">${Put_Body} = {'id': 'ff8081819782e69e019bae9a501f149b', 'name': 'Accer Pro', 'data': {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB'}}</msg>
 <var>${Put_Body}</var>
 <arg>id=${ids}</arg>
 <arg>name=${New_Name}</arg>
 <arg>data=${Data}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.148940" elapsed="0.001050"/>
+<status status="PASS" start="2026-01-11T20:48:28.719927" elapsed="0.000998"/>
 </kw>
 <kw name="PUT On Session" owner="RequestsLibrary">
-<msg time="2026-01-11T19:35:12.427950" level="INFO">PUT Request : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae5739e91417 
- path_url=/objects/ff8081819782e69e019bae5739e91417 
+<msg time="2026-01-11T20:48:28.995601" level="INFO">PUT Request : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae9a501f149b 
+ path_url=/objects/ff8081819782e69e019bae9a501f149b 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '152'} 
- body=b'{"id": "ff8081819782e69e019bae5739e91417", "name": "Accer Pro", "data": {"year": "2025", "price": "18500", "CPU model": "A7", "Hard disk size": "2 TB"}}' 
+ body=b'{"id": "ff8081819782e69e019bae9a501f149b", "name": "Accer Pro", "data": {"year": "2025", "price": "18500", "CPU model": "A7", "Hard disk size": "2 TB"}}' 
  </msg>
-<msg time="2026-01-11T19:35:12.428119" level="INFO">PUT Response : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae5739e91417 
+<msg time="2026-01-11T20:48:28.996077" level="INFO">PUT Response : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae9a501f149b 
  status=200, reason=OK 
- headers={'Date': 'Sun, 11 Jan 2026 18:35:11 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=F%2BJcbOE8B2jxCwp%2Biv17fv494i1Khnw8B07NehzuH491HbsgzT%2F5ETBmoYnG3CxrxjocKfriEECSpFBvjUBcDL4pw4%2BiGehPS5CmKnDHjxW9Ax8%3D"}]}', 'Content-Encoding': 'zstd', 'CF-RAY': '9bc683318a0e902d-ARN', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"id":"ff8081819782e69e019bae5739e91417","name":"Accer Pro","updatedAt":"2026-01-11T18:35:11.083+00:00","data":{"year":"2025","price":"18500","CPU model":"A7","Hard disk size":"2 TB"}} 
+ headers={'Date': 'Sun, 11 Jan 2026 19:48:27 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JlXZ%2FnPRQY9BO1ebHZZAZKbSvOHjn8ufF0HabZhB4j%2F1bZtdmt6umvM1CXzbqBgj%2FyqwFng0XKYCSfxwHiUz8fQSivaJVKoXbasY2N9XAxNGIWU%3D"}]}', 'Content-Encoding': 'zstd', 'CF-RAY': '9bc6ee884aeead45-ARN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"id":"ff8081819782e69e019bae9a501f149b","name":"Accer Pro","updatedAt":"2026-01-11T19:48:27.663+00:00","data":{"year":"2025","price":"18500","CPU model":"A7","Hard disk size":"2 TB"}} 
  </msg>
-<msg time="2026-01-11T19:35:12.428360" level="INFO">${put_response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-01-11T20:48:28.996644" level="INFO">${put_response} = &lt;Response [200]&gt;</msg>
 <var>${put_response}</var>
 <arg>E2E_API_Testing</arg>
 <arg>${URI}/${ids}</arg>
 <arg>headers=${headers}</arg>
 <arg>json=${Put_Body}</arg>
 <doc>Sends a PUT request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.150270" elapsed="0.278154"/>
+<status status="PASS" start="2026-01-11T20:48:28.721186" elapsed="0.275620"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${put_response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.428717" elapsed="0.001334"/>
+<status status="PASS" start="2026-01-11T20:48:28.997505" elapsed="0.003589"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${put_response.content}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.430359" elapsed="0.001331"/>
+<status status="PASS" start="2026-01-11T20:48:29.001752" elapsed="0.003491"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-01-11T19:35:12.698590" level="INFO">GET Request : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae5739e91417 
- path_url=/objects/ff8081819782e69e019bae5739e91417 
+<msg time="2026-01-11T20:48:29.259577" level="INFO">GET Request : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae9a501f149b 
+ path_url=/objects/ff8081819782e69e019bae9a501f149b 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-01-11T19:35:12.698948" level="INFO">GET Response : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae5739e91417 
+<msg time="2026-01-11T20:48:29.259960" level="INFO">GET Response : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae9a501f149b 
  status=200, reason=OK 
- headers={'Date': 'Sun, 11 Jan 2026 18:35:11 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=QWOBg5xAgBsohR7A69r0DDld%2FzoMAxNABXXfgxbgGCbc93N5tplwkZ4fv2vLKJ7kpIsJZZ1QNH7MyhElEFZdW8MzbYJGe%2FSS%2BjV4WMMibvTs%2FDw%3D"}]}', 'Content-Encoding': 'zstd', 'CF-RAY': '9bc683334e79902d-ARN', 'alt-svc': 'h3=":443"; ma=86400'} 
- body={"id":"ff8081819782e69e019bae5739e91417","name":"Accer Pro","data":{"year":"2025","price":"18500","CPU model":"A7","Hard disk size":"2 TB"}} 
+ headers={'Date': 'Sun, 11 Jan 2026 19:48:28 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=x1I0zukGSzHW8005n7lADdCtHkfLApAGxyffBdzXEOX6uATXmqHGrFXlfXQ46BWOp4KQwzf3mlRx8S01GW9qomyR5t%2BFEbOR5oBF%2BPiOfLEW59U%3D"}]}', 'Content-Encoding': 'zstd', 'CF-RAY': '9bc6ee8a0eb0ad45-ARN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"id":"ff8081819782e69e019bae9a501f149b","name":"Accer Pro","data":{"year":"2025","price":"18500","CPU model":"A7","Hard disk size":"2 TB"}} 
  </msg>
-<msg time="2026-01-11T19:35:12.699810" level="INFO">${Get_Response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-01-11T20:48:29.260511" level="INFO">${Get_Response} = &lt;Response [200]&gt;</msg>
 <var>${Get_Response}</var>
 <arg>E2E_API_Testing</arg>
 <arg>${URI}/${ids}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.431982" elapsed="0.268006"/>
+<status status="PASS" start="2026-01-11T20:48:29.005854" elapsed="0.254815"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-01-11T19:35:12.704669" level="INFO">${Get_Json_Response} = {'id': 'ff8081819782e69e019bae5739e91417', 'name': 'Accer Pro', 'data': {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB'}}</msg>
+<msg time="2026-01-11T20:48:29.264924" level="INFO">${Get_Json_Response} = {'id': 'ff8081819782e69e019bae9a501f149b', 'name': 'Accer Pro', 'data': {'year': '2025', 'price': '18500', 'CPU model': 'A7', 'Hard disk size': '2 TB'}}</msg>
 <var>${Get_Json_Response}</var>
 <arg>${Get_Response.json()}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.700696" elapsed="0.004154"/>
+<status status="PASS" start="2026-01-11T20:48:29.261365" elapsed="0.003737"/>
 </kw>
 <kw name="Get Value From Json" owner="JSONLibrary">
-<msg time="2026-01-11T19:35:12.765918" level="INFO">${First_Name} = ['Accer Pro']</msg>
+<msg time="2026-01-11T20:48:29.335233" level="INFO">${First_Name} = ['Accer Pro']</msg>
 <var>${First_Name}</var>
 <arg>${Get_Json_Response}</arg>
 <arg>$.name</arg>
 <doc>Get Value From JSON using JSONPath</doc>
-<status status="PASS" start="2026-01-11T19:35:12.705608" elapsed="0.060392"/>
+<status status="PASS" start="2026-01-11T20:48:29.265737" elapsed="0.069587"/>
 </kw>
 <kw name="Get From List" owner="Collections">
-<msg time="2026-01-11T19:35:12.766679" level="INFO">${Name} = Accer Pro</msg>
+<msg time="2026-01-11T20:48:29.336231" level="INFO">${Name} = Accer Pro</msg>
 <var>${Name}</var>
 <arg>${First_Name}</arg>
 <arg>0</arg>
 <doc>Returns the value specified with an ``index`` from ``list``.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.766282" elapsed="0.000458"/>
+<status status="PASS" start="2026-01-11T20:48:29.335636" elapsed="0.000718"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${Name}</arg>
 <arg>${New_Name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2026-01-11T19:35:12.767030" elapsed="0.000648"/>
+<status status="PASS" start="2026-01-11T20:48:29.336897" elapsed="0.001338"/>
 </kw>
-<status status="PASS" start="2026-01-11T19:35:10.999035" elapsed="1.768817"/>
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2026-01-11T20:48:29.596331" level="INFO">DELETE Request : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae9a501f149b 
+ path_url=/objects/ff8081819782e69e019bae9a501f149b 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2026-01-11T20:48:29.596680" level="INFO">DELETE Response : url=https://api.restful-api.dev/objects/ff8081819782e69e019bae9a501f149b 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 11 Jan 2026 19:48:28 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Vary': 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dZ7Z7cGHqVOgQFYHzfPm%2FiAgl37Zp17XzHzENx9CU2b2rDeXLohGVCqZ2qTqmgBtIbhAy87L%2FHxaujQkMduLcaGWxFLNxXoTX%2Fkl16GWodHCP%2Fs%3D"}]}', 'Content-Encoding': 'zstd', 'CF-RAY': '9bc6ee8c2bf5ad45-ARN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"message":"Object with id = ff8081819782e69e019bae9a501f149b has been deleted."} 
+ </msg>
+<msg time="2026-01-11T20:48:29.597191" level="INFO">${Delete_Responce} = &lt;Response [200]&gt;</msg>
+<var>${Delete_Responce}</var>
+<arg>E2E_API_Testing</arg>
+<arg>${URI}/${ids}</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-01-11T20:48:29.338776" elapsed="0.258557"/>
 </kw>
-<status status="PASS" start="2026-01-11T19:35:10.297154" elapsed="2.471200"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-11T20:48:29.600739" level="INFO">${Delete_Json_Response} = {'message': 'Object with id = ff8081819782e69e019bae9a501f149b has been deleted.'}</msg>
+<var>${Delete_Json_Response}</var>
+<arg>${Delete_Responce.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-11T20:48:29.597924" elapsed="0.003588"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2026-01-11T20:48:29.660212" level="INFO">${Deleted_Message} = ['Object with id = ff8081819782e69e019bae9a501f149b has been deleted.']</msg>
+<var>${Deleted_Message}</var>
+<arg>${Delete_Json_Response}</arg>
+<arg>$.message</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2026-01-11T20:48:29.602234" elapsed="0.058061"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2026-01-11T20:48:29.660964" level="INFO">${Message} = Object with id = ff8081819782e69e019bae9a501f149b has been deleted.</msg>
+<var>${Message}</var>
+<arg>${Deleted_Message}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2026-01-11T20:48:29.660578" elapsed="0.000446"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${Message}</arg>
+<arg>Object with id = ${ids} has been deleted.</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-01-11T20:48:29.661243" elapsed="0.000657"/>
+</kw>
+<status status="PASS" start="2026-01-11T20:48:27.605907" elapsed="2.056160"/>
+</kw>
+<status status="PASS" start="2026-01-11T20:48:27.203193" elapsed="2.459625"/>
 </test>
-<status status="PASS" start="2026-01-11T19:35:09.343245" elapsed="3.426315"/>
+<status status="PASS" start="2026-01-11T20:48:26.275825" elapsed="3.388480"/>
 </suite>
 <statistics>
 <total>
